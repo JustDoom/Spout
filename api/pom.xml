@@ -85,9 +85,9 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.spout</groupId>
+			<groupId>com.github.flowpowered</groupId>
 			<artifactId>react</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>1ad19d6</version>
 			<scope>compile</scope>
 		</dependency>
 		<dependency>

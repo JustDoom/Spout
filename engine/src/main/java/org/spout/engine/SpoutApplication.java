@@ -27,6 +27,7 @@
 package org.spout.engine;
 
 import java.io.File;
+import java.util.Arrays;
 
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
@@ -61,6 +62,9 @@ public class SpoutApplication {
 	public String user = null;
 
 	public static void main(String[] args) {
+		for (String str : args) {
+			System.out.println(str);
+		}
 		try {
 			SpoutApplication main = new SpoutApplication();
 			JCommander commands = new JCommander(main);
