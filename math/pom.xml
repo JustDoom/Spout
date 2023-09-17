@@ -70,51 +70,10 @@
 						</configuration>
 					</execution>
 					<execution>
-						<id>test-generatei</id>
-						<phase>generate-test-sources</phase>
-						<goals>
-							<goal>test-generate</goal>
-						</goals>
-						<configuration>
-							<templateDir>${basedir}/src/test/templatei</templateDir>
-							<types>
-								<type>
-									<primitive>int</primitive>
-									<wrapper>Integer</wrapper>
-									<abbreviation>i</abbreviation>
-									<max_value>Integer.MAX_VALUE</max_value>
-									<min_value>Integer.MIN_VALUE</min_value>
-									<placeholders>
-										<Overload>long</Overload>
-										<S>Int</S>
-									</placeholders>
-								</type>
-								<type>
-									<primitive>long</primitive>
-									<wrapper>Long</wrapper>
-									<abbreviation>l</abbreviation>
-									<max_value>Long.MAX_VALUE</max_value>
-									<min_value>Long.MIN_VALUE</min_value>
-									<placeholders>
-										<Overload>int</Overload>
-										<S>Long</S>
-									</placeholders>
-								</type>
-							</types>
-						</configuration>
-					</execution>
-					<execution>
 						<id>generate</id>
 						<phase>generate-sources</phase>
 						<goals>
 							<goal>generate</goal>
-						</goals>
-					</execution>
-					<execution>
-						<id>test-generate</id>
-						<phase>generate-test-sources</phase>
-						<goals>
-							<goal>test-generate</goal>
 						</goals>
 					</execution>
 				</executions>
